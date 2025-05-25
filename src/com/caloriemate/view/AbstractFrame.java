@@ -7,7 +7,6 @@ public abstract class AbstractFrame extends JFrame {
         super(title);
         System.out.println("[AbstractFrame] Konstruktor dipanggil untuk: " + title);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        // Tidak memanggil initComponents() di sini, biarkan kelas turunan yang memanggil
     }
 
     protected abstract void initComponents();

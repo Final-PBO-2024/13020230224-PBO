@@ -6,7 +6,6 @@ public class User {
     private String password;
     private String email;
 
-    // Constructor
     public User(int id, String username, String password, String email) {
         this.id = id;
         this.username = username;
@@ -14,7 +13,6 @@ public class User {
         this.email = email;
     }
 
-    // Getters and Setters
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
     public String getUsername() { return username; }

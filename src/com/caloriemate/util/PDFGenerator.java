@@ -18,7 +18,7 @@ public class PDFGenerator {
         List<Food> foods;
         try {
             foods = foodController.getFoods(username, "");
-            System.out.println("Jumlah makanan yang diambil: " + foods.size()); // Debugging
+            System.out.println("Jumlah makanan yang diambil: " + foods.size());
         } catch (Exception e) {
             System.err.println("Error mengambil data makanan: " + e.getMessage());
             e.printStackTrace();
@@ -30,26 +30,22 @@ public class PDFGenerator {
             PdfWriter.getInstance(document, new FileOutputStream("report.pdf"));
             document.open();
 
-            // Judul
             Paragraph title = new Paragraph("Laporan Kalori - CalorieMate");
             title.setAlignment(Paragraph.ALIGN_CENTER);
             title.setSpacingAfter(20f);
             document.add(title);
 
-            // Tabel
             PdfPTable table = new PdfPTable(5);
             table.setWidthPercentage(100);
             table.setSpacingBefore(10f);
             table.setSpacingAfter(10f);
 
-            // Header Tabel
             table.addCell("ID");
             table.addCell("Nama");
             table.addCell("Kalori");
             table.addCell("Kategori");
             table.addCell("Tanggal");
 
-            // Data Tabel
             if (foods.isEmpty()) {
                 System.out.println("Tidak ada data makanan untuk dimasukkan ke PDF.");
                 Paragraph emptyMessage = new Paragraph("Tidak ada data makanan yang tersedia untuk pengguna ini.");

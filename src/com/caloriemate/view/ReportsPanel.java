@@ -36,7 +36,6 @@ public class ReportsPanel extends JPanel {
     private void initComponents() {
         System.out.println("[ReportsPanel] Memulai initComponents untuk username: " + username);
 
-        // Header
         JPanel headerPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
         headerPanel.setBackground(new Color(0x1C2526));
         JLabel titleLabel = new JLabel("Reports");
@@ -45,7 +44,6 @@ public class ReportsPanel extends JPanel {
         headerPanel.add(titleLabel);
         add(headerPanel, BorderLayout.NORTH);
 
-        // Weekly Report
         weeklyReportArea = new JTextArea(10, 40);
         weeklyReportArea.setFont(new Font("Roboto", Font.PLAIN, 14));
         weeklyReportArea.setBackground(new Color(0x4A4A4A));
@@ -55,7 +53,6 @@ public class ReportsPanel extends JPanel {
         JScrollPane reportScroll = new JScrollPane(weeklyReportArea);
         add(reportScroll, BorderLayout.CENTER);
 
-        // Button Panel
         JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
         buttonPanel.setBackground(new Color(0x1C2526));
         generatePdfButton = new JButton("Generate PDF Report");

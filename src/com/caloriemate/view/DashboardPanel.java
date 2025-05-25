@@ -47,7 +47,6 @@ public class DashboardPanel extends JPanel {
     private void initComponents() {
         System.out.println("[DashboardPanel] Memulai initComponents untuk username: " + username);
 
-        // Header
         JPanel headerPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
         headerPanel.setBackground(new Color(0x1C2526));
         JLabel titleLabel = new JLabel("Dashboard");
@@ -56,7 +55,6 @@ public class DashboardPanel extends JPanel {
         headerPanel.add(titleLabel);
         add(headerPanel, BorderLayout.NORTH);
 
-        // Main Content
         JPanel contentPanel = new JPanel(new GridBagLayout());
         contentPanel.setBackground(new Color(0x1C2526));
         contentPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
@@ -65,7 +63,6 @@ public class DashboardPanel extends JPanel {
         gbc.fill = GridBagConstraints.HORIZONTAL;
         gbc.weightx = 1.0;
 
-        // Total Calories
         totalCaloriesLabel = new JLabel("Total Kalori: Memuat...");
         totalCaloriesLabel.setFont(new Font("Roboto", Font.PLAIN, 18));
         totalCaloriesLabel.setForeground(Color.WHITE);
@@ -73,21 +70,18 @@ public class DashboardPanel extends JPanel {
         gbc.gridy = 0;
         contentPanel.add(totalCaloriesLabel, gbc);
 
-        // Latest Mood
         latestMoodLabel = new JLabel("Mood Terbaru: Memuat...");
         latestMoodLabel.setFont(new Font("Roboto", Font.PLAIN, 18));
         latestMoodLabel.setForeground(Color.WHITE);
         gbc.gridy = 1;
         contentPanel.add(latestMoodLabel, gbc);
 
-        // Latest Weight
         latestWeightLabel = new JLabel("Berat Terbaru: Memuat...");
         latestWeightLabel.setFont(new Font("Roboto", Font.PLAIN, 18));
         latestWeightLabel.setForeground(Color.WHITE);
         gbc.gridy = 2;
         contentPanel.add(latestWeightLabel, gbc);
 
-        // Daily Report
         reportArea = new JTextArea(5, 30);
         reportArea.setFont(new Font("Roboto", Font.PLAIN, 14));
         reportArea.setBackground(new Color(0x4A4A4A));
@@ -100,7 +94,6 @@ public class DashboardPanel extends JPanel {
         gbc.weighty = 0.3;
         contentPanel.add(reportScroll, gbc);
 
-        // Calorie Chart
         chartPanel = new ChartPanel(null);
         chartPanel.setPreferredSize(new Dimension(400, 200));
         gbc.gridy = 4;
@@ -113,30 +106,25 @@ public class DashboardPanel extends JPanel {
     private void updateDashboard() {
         System.out.println("[DashboardPanel] Mengambil data dashboard untuk username: " + username);
         try {
-            // Update total calories
             int totalCalories = foodController.getTotalCalories(username);
             totalCaloriesLabel.setText("Total Kalori: " + totalCalories + " kcal");
             System.out.println("[DashboardPanel] Total kalori diambil: " + totalCalories);
 
-            // Update latest mood
             String latestMood = journalController.getLatestMood(username);
             latestMoodLabel.setText("Mood Terbaru: " + (latestMood != null ? latestMood : "Tidak ada data"));
             System.out.println("[DashboardPanel] Mood terbaru diambil: " + latestMood);
 
-            // Update latest weight
             Double latestWeight = weightController.getLatestWeight(username);
             latestWeightLabel.setText("Berat Terbaru: " + (latestWeight != null ? latestWeight + " kg" : "Tidak ada data"));
             System.out.println("[DashboardPanel] Berat terbaru diambil: " + latestWeight);
 
-            // Update report
             String report = "Laporan Harian untuk " + username + ":\n";
             report += "- Total Kalori: " + totalCalories + " kcal\n";
             report += "- Mood Terbaru: " + (latestMood != null ? latestMood : "Tidak ada data") + "\n";
             report += "- Berat Terbaru: " + (latestWeight != null ? latestWeight + " kg" : "Tidak ada data") + "\n";
             report += "- Catatan: Tambahkan data di Food Log, Diet Journal, atau Weight Tracking untuk pembaruan.\n";
             reportArea.setText(report);
-
-            // Update chart
+            
             List<Food> foods = foodController.getFoods(username, "");
             chartPanel.setChart(ChartGenerator.createCalorieChart(foods));
         } catch (SQLException e) {
@@ -165,7 +153,7 @@ public class DashboardPanel extends JPanel {
             public void run() {
                 SwingUtilities.invokeLater(() -> updateDashboard());
             }
-        }, 0, 5000); // Update setiap 5 detik
+        }, 0, 5000);
         System.out.println("[DashboardPanel] Auto-update dashboard dimulai untuk username: " + username);
     }
 }

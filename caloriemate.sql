@@ -1,9 +1,7 @@
--- Create Database
 DROP DATABASE IF EXISTS caloriemate_database;
 CREATE DATABASE caloriemate_database;
 USE caloriemate_database;
 
--- Create Tables
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) UNIQUE NOT NULL,
@@ -41,7 +39,6 @@ CREATE TABLE weights (
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
--- Insert Sample Data
 INSERT INTO users (username, password, email)
 VALUES ('ahsan', '123456', 'ahsan@example.com');
 

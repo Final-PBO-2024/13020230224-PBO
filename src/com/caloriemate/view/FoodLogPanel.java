@@ -38,7 +38,6 @@ public class FoodLogPanel extends JPanel {
     private void initComponents() {
         System.out.println("[FoodLogPanel] Memulai initComponents untuk username: " + username);
 
-        // Header
         JPanel headerPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
         headerPanel.setBackground(new Color(0x1C2526));
         JLabel titleLabel = new JLabel("Food Log");
@@ -47,7 +46,6 @@ public class FoodLogPanel extends JPanel {
         headerPanel.add(titleLabel);
         add(headerPanel, BorderLayout.NORTH);
 
-        // Input Panel
         JPanel inputPanel = new JPanel(new GridBagLayout());
         inputPanel.setBackground(new Color(0x1C2526));
         inputPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
@@ -55,7 +53,6 @@ public class FoodLogPanel extends JPanel {
         gbc.insets = new Insets(5, 5, 5, 5);
         gbc.fill = GridBagConstraints.HORIZONTAL;
 
-        // Labels and Fields
         JLabel nameLabel = new JLabel("Nama:");
         nameLabel.setFont(new Font("Roboto", Font.PLAIN, 14));
         nameLabel.setForeground(Color.WHITE);
@@ -96,7 +93,6 @@ public class FoodLogPanel extends JPanel {
         gbc.gridy = 2;
         inputPanel.add(categoryCombo, gbc);
 
-        // Buttons
         addButton = new JButton("Tambah");
         addButton.setFont(new Font("Roboto", Font.BOLD, 14));
         addButton.setBackground(new Color(0xD3D3D3));
@@ -138,7 +134,6 @@ public class FoodLogPanel extends JPanel {
         gbc.gridwidth = 2;
         inputPanel.add(hardDeleteButton, gbc);
 
-        // Search Panel
         JPanel searchPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
         searchPanel.setBackground(new Color(0x1C2526));
         JLabel searchLabel = new JLabel("Cari:");

@@ -10,7 +10,6 @@ public class Journal {
     private Date date;
     private boolean isDeleted;
 
-    // Constructor
     public Journal(int id, int userId, String note, String mood, Date date, boolean isDeleted) {
         this.id = id;
         this.userId = userId;
@@ -20,7 +19,6 @@ public class Journal {
         this.isDeleted = isDeleted;
     }
 
-    // Getters and Setters
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
     public int getUserId() { return userId; }

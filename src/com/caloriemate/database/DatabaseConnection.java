@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class DatabaseConnection {
     private static final String URL = "jdbc:mysql://localhost:3306/caloriemate_database?useSSL=false&serverTimezone=Asia/Jakarta";
     private static final String USER = "root";
-    private static final String PASSWORD = ""; // Ganti dengan password Anda
+    private static final String PASSWORD = "";
 
     public static Connection getConnection() throws SQLException {
         System.out.println("[DatabaseConnection] Mencoba koneksi ke database: " + URL);

@@ -9,7 +9,6 @@ public class Weight {
     private Date date;
     private boolean isDeleted;
 
-    // Constructor
     public Weight(int id, int userId, double weight, Date date, boolean isDeleted) {
         this.id = id;
         this.userId = userId;
@@ -18,7 +17,6 @@ public class Weight {
         this.isDeleted = isDeleted;
     }
 
-    // Getters and Setters
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
     public int getUserId() { return userId; }

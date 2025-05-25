@@ -28,7 +28,6 @@ public class MainFrame extends AbstractFrame {
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
 
-        // Header
         JPanel headerPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
         headerPanel.setBackground(new Color(0x1C2526));
         JLabel welcomeLabel = new JLabel("Selamat Datang, " + username);
@@ -46,7 +45,6 @@ public class MainFrame extends AbstractFrame {
         headerPanel.add(logoutButton);
         add(headerPanel, BorderLayout.NORTH);
 
-        // Tabbed Pane
         tabbedPane = new JTabbedPane();
         tabbedPane.setFont(new Font("Roboto", Font.PLAIN, 14));
         tabbedPane.setBackground(new Color(0x1C2526));
