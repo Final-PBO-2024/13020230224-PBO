@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/caloriemate.sql</file>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/src/com/caloriemate/main.java</file>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/src/com/caloriemate/util/ChartGenerator.java</file>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/src/com/caloriemate/util/PDFGenerator.java</file>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/src/com/caloriemate/view/AbstractFrame.java</file>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/src/com/caloriemate/view/DashboardPanel.java</file>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/src/com/caloriemate/view/DietJournalPanel.java</file>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/src/com/caloriemate/controller/AuthController.java</file>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/src/com/caloriemate/controller/FoodController.java</file>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/src/com/caloriemate/controller/JournalController.java</file>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/src/com/caloriemate/controller/WeightController.java</file>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/src/com/caloriemate/view/WeightTrackingPanel.java</file>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/src/com/caloriemate/database/DatabaseConnection.java</file>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/src/com/caloriemate/database/JournalDAO.java</file>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/src/com/caloriemate/database/FoodDAO.java</file>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/src/com/caloriemate/database/UserDAO.java</file>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/src/com/caloriemate/database/WeightDAO.java</file>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/src/com/caloriemate/view/MainFrame.java</file>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/src/com/caloriemate/view/LoginFrame.java</file>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/src/com/caloriemate/view/FoodLogPanel.java</file>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/src/com/caloriemate/view/ReportsPanel.java</file>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/src/com/caloriemate/model/Food.java</file>
+            <file>file:/D:/Documents/A%20FILE%20NON%20SISTEM/College/Semester%204/LAB%20PBO/Final/CalorieMate/src/com/caloriemate/model/Journal.java</file>
+        </group>
+    </open-files>
+</project-private>
